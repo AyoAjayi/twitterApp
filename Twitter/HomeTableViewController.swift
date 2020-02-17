@@ -79,7 +79,7 @@ class HomeTableViewController: UITableViewController {
     //Takes care of when the user scrolls to the end of the table
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
         if indexPath.row + 1 == tweetArray.count{
-            loadTweets()
+            loadMoreTweets()
         }
     }
     
